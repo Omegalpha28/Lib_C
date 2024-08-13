@@ -1,6 +1,6 @@
 #include "my.h"
 
-static int coding_style(char *word, int j)
+static int space_limited(char *word, int j)
 {
     if (word[j] == ' ' || word[j] == '\t')
         for (; (!(word[j + 1] != ' ' && word[j + 1] != '\t')); j++);
@@ -29,7 +29,7 @@ char **my_str_to_word_array(char *word)
             array[line][character] = word[j];
             character++;
         }
-        j = coding_style(word, j);
+        j = space_limited(word, j);
         if (array[line][character - 1] != '\0')
             array[line][character] = '\0';
         line++;
