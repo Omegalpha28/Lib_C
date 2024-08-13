@@ -1,7 +1,6 @@
-#include <stdio.h>
-#include <unistd.h>
+#include "my.h"
 
-int using_task06_2(int nb, int step)
+static int using_task06_2(int nb, int step)
 {
     while (step * 2 <= nb) {
         if (nb % step == 0)
@@ -10,7 +9,7 @@ int using_task06_2(int nb, int step)
     }
 }
 
-int using_task06(int nb)
+static int using_task06(int nb)
 {
     int step = 3;
 

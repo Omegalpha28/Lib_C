@@ -1,7 +1,6 @@
-#include <stdio.h>
-#include <unistd.h>
+#include "my.h"
 
-int wh_is_prime(int nb)
+static int wh_is_prime(int nb)
 {
     int step = 3;
 

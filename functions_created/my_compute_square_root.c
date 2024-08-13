@@ -1,7 +1,6 @@
-#include <stdio.h>
-#include <unistd.h>
+#include "my.h"
 
-int my_result(int nb)
+static int my_result(int nb)
 {
     int step = 0;
     int result = 0;
