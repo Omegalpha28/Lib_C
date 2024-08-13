@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2023
-** C-POOL05
-** File description:
-** print my_find_prime_sup
-*/
 #include <stdio.h>
 #include <unistd.h>
 

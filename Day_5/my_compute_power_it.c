@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2023
-** C-POOL07
-** File description:
-** print my_compute_power
-*/
 #include <stdio.h>
 #include <unistd.h>
 

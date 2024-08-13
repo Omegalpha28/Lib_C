@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2023
-** C-POOL05
-** File description:
-** print my_compute_square_root
-*/
 #include <stdio.h>
 #include <unistd.h>
 

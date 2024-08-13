@@ -1,9 +1,3 @@
-/*
-** EPITECH PROJECT, 2023
-** C-POOL05
-** File description:
-** print my_compute_fact_rec
-*/
 #include <stdio.h>
 #include <unistd.h>
 
