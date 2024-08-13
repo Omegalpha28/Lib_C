@@ -2,7 +2,7 @@
 
 <h2>Repository info ℹ️</h2>
 <div>
-    <img alt="visitors" src="https://visitor-badge.laobi.icu/badge?page_id=Omegalpha28.Lib_C" height="30px">
+    <img src="https://api.visitorbadge.io/api/VisitorHit?user=Omegalpha28&repo=Lib_C&countColor=%237B1E7A" />
     <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Omegalpha28/Lib_C?color=082DEA&logo=github&style=for-the-badge&logoColor=181717" height="30px">
     <img alt="Last commit" src="https://img.shields.io/github/last-commit/Omegalpha28/Lib_C?color=082DEA&logo=git&logoColor&style=for-the-badge" height="30px">
     <img alt="GitHub forks" src="https://img.shields.io/github/forks/Omegalpha28/Lib_C?color=082DEA&logo=github&style=for-the-badge&logoColor=181717" height="30px">
