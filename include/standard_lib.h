@@ -11,4 +11,5 @@ char *my_strcpy(char *dest, char const *str);
 int my_strlen(char const *str);
 char *my_strrev(char *str);
 void my_swap(int *a, int *b);
+char *my_strdup(char const *src);
 #endif
