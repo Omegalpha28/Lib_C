@@ -1,6 +1,6 @@
-# Lib_C
+<h1> Lib_C </h1>
 
-<h1> functions_created </h1>
+<h1> functions created </h1>
 <div> <ul>
 <li>my_char_is_printable = This function checks if a character is printable (not a control character), returning 0 if it is, and 1 otherwise.</li>
 <li>my_compute_factorial_it = This function calculates the factorial of a non-negative integer the number given iteratively and computing the factorial for values between 1 and 12. For values outside this range, it returns 0.</li>
@@ -17,7 +17,7 @@
 <li>word_counter = The word_counter function is designed to count the number of words in a string based on spaces as delimiters.</li>
 </ul> </div>
 
-<h1> Standard Lic C </h1>
+<h1> Standard Library C </h1>
 <div> <ul>
 <li>my_strdup = The function creates a duplicate of the input string src by allocating memory for a new string and copying the contents of src into it.</li>
 <li>my_putchar = The function is a simple utility function that writes a single character to the standard output (typically the terminal).</li>
