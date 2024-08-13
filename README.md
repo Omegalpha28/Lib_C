@@ -43,6 +43,6 @@
 <li>my_strncmp = The function compares up to len characters of two strings s1 and s2. It returns the difference between the first differing characters, or 0 if the strings are equal within the given length.</li>
 <li>my_strncpy = The function copies up to n characters from the source string str to the destination string dest. If the source string is shorter than n characters, the destination string is null-terminated after the copied characters.</li>
 <li>my_strndup = The function create substrings from a given input, either by trimming leading spaces and copying a specified range or by copying from a start point to the end of the string.</li>
-<li>my serrev = This function reverses the string str in place by swapping characters from the beginning and end towards the center. It returns the modified string.</li>
+<li>my strrev = This function reverses the string str in place by swapping characters from the beginning and end towards the center. It returns the modified string.</li>
 <li>my_swap = This function swaps the values of two integers pointed to by a and b using a temporary variable.</li>
 </ul> </div>
