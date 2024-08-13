@@ -12,4 +12,7 @@ int my_strlen(char const *str);
 char *my_strrev(char *str);
 void my_swap(int *a, int *b);
 char *my_strdup(char const *src);
+char *my_strndup(int begin, int end, char const *input);
+char *my_strncpy(char *dest, char const *str, int n);
+int my_strncmp(char const *s1, char const *s2, int len);
 #endif
