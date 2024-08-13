@@ -12,7 +12,7 @@ int my_compute_power_it(int nb, int p)
     if (nb > 0 || nb < 0) {
         for (step = 0; step < p; step++)
             result = nb * result;
-        if (result > 2147483647 || result < -2147483648)
+        if (result > 2147483647 || result < -2147483647)
             return 0;
         return (result);
     } else {

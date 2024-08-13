@@ -7,20 +7,20 @@ static int using_task06_2(int nb, int step)
             return 0;
         step += 1;
     }
+    return step;
 }
 
 static int using_task06(int nb)
 {
     int step = 3;
 
-    if ((nb % 2 == 0) && (nb != 2) || nb < 2)
+    if (((nb % 2 == 0) && (nb != 2)) || nb < 2)
         return 0;
     if (nb == 2)
         return 1;
     if (using_task06_2(nb, step) == 0)
         return 0;
-    else
-        return 1;
+    return 1;
 }
 
 int my_find_prime_sup(int nb)
@@ -36,6 +36,6 @@ int my_find_prime_sup(int nb)
             nb++;
         }
     nb = nb - 1;
-    return (nb);
     }
+    return (nb);
 }

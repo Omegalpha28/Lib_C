@@ -14,7 +14,7 @@ static int wh_is_prime(int nb)
 
 int my_is_prime(int nb)
 {
-    if ((nb % 2 == 0) && (nb != 2) || nb < 2)
+    if (((nb % 2 == 0) && (nb != 2)) || nb < 2)
         return 0;
     if (nb == 2)
         return 1;
