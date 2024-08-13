@@ -18,10 +18,19 @@ E_C_FC_ROOT = 	./functions_created/
 FC_NAME		=	$(E_C_FC_ROOT)function_created.a
 
 E_C_FC		= 	$(E_C_FC_ROOT)my_char_is_printable.c \
+				$(E_C_FC_ROOT)my_compute_factorial_it.c \
+				$(E_C_FC_ROOT)my_compute_factorial_rec.c \
+				$(E_C_FC_ROOT)my_compute_power_it.c \
+				$(E_C_FC_ROOT)my_compute_power_rec.c \
+				$(E_C_FC_ROOT)my_compute_square_root.c \
+				$(E_C_FC_ROOT)my_find_prime_sup.c \
+				$(E_C_FC_ROOT)my_is_prime.c \
 				$(E_C_FC_ROOT)my_str_to_word_array.c \
 				$(E_C_FC_ROOT)numlen.c \
 				$(E_C_FC_ROOT)skip_spaces.c \
 				$(E_C_FC_ROOT)skipstr.c \
+				$(E_C_FC_ROOT)wacpy.c \
+				$(E_C_FC_ROOT)walen.c \
 				$(E_C_FC_ROOT)word_counter.c
 
 FC_OBJECTS	=	$(E_C_FC:.c=.o)
@@ -37,9 +46,12 @@ E_C_SL		=	$(E_C_SL_ROOT)my_putchar.c \
 				$(E_C_SL_ROOT)my_strcat.c \
 				$(E_C_SL_ROOT)my_strcmp.c \
 				$(E_C_SL_ROOT)my_strcpy.c \
-				$(E_C_SL_ROOT)my_strlen.c \
-				$(E_C_SL_ROOT)my_strrev.c \
 				$(E_C_SL_ROOT)my_strdup.c \
+				$(E_C_SL_ROOT)my_strlen.c \
+				$(E_C_SL_ROOT)my_strncmp.c \
+				$(E_C_SL_ROOT)my_strncpy.c \
+				$(E_C_SL_ROOT)my_strndup.c \
+				$(E_C_SL_ROOT)my_strrev.c \
 				$(E_C_SL_ROOT)my_swap.c
 
 SL_OBJECTS	=	$(E_C_SL:.c=.o)
