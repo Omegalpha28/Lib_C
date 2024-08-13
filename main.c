@@ -2,7 +2,6 @@
 
 int main(void)
 {
-    my_putstr("ok boomer\n");
-    my_putchar('a');
+    # You can test all the available functions here!
     return 0;
 }
