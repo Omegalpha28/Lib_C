@@ -1,7 +1,6 @@
-#include <stdio.h>
-#include <unistd.h>
+#include "my.h"
 
-int my_putstr(char const *str)
+void my_putstr(char const *str)
 {
     int step = 0;
 

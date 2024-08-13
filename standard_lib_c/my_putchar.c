@@ -1,6 +1,6 @@
-#include <unistd.h>
+#include "../include/my.h"
 
-char my_putchar(char a)
+void my_putchar(char a)
 {
     write(1, &a, 1);
 }

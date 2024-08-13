@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <unistd.h>
+#include "my.h"
 
 int my_strlen(char const *str)
 {
