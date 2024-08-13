@@ -26,13 +26,6 @@ E_C_FC		= 	$(E_C_FC_ROOT)my_char_is_printable.c \
 
 FC_OBJECTS	=	$(E_C_FC:.c=.o)
 
-E_C_LSI_ROOT=	./lib_string_included/
-
-LSI_NAME		=	$(E_C_LSI_ROOT)lib_string_included.a
-
-E_C_LSI		=	$(E_C_LSI_ROOT)my_strdup.c
-
-LSI_OBJECTS	=	$(E_C_LSI:.c=.o)
 
 E_C_SL_ROOT	=	./standard_lib_c/
 
@@ -46,6 +39,7 @@ E_C_SL		=	$(E_C_SL_ROOT)my_putchar.c \
 				$(E_C_SL_ROOT)my_strcpy.c \
 				$(E_C_SL_ROOT)my_strlen.c \
 				$(E_C_SL_ROOT)my_strrev.c \
+				$(E_C_SL_ROOT)my_strdup.c \
 				$(E_C_SL_ROOT)my_swap.c
 
 SL_OBJECTS	=	$(E_C_SL:.c=.o)
@@ -75,12 +69,6 @@ build_FC: $(FC_OBJECTS)
 				$(AR) -rc $(FC_NAME) $(FC_OBJECTS)
 				$(ECHO) -e "\033[102m[✅]\033[0m FC builded!"
 
-build_LSI: $(LSI_OBJECTS)
-				$(ECHO) -ne "\033[104m[✅]\033[0m All function not standard (LSI) have been compiled\n"
-				$(ECHO) -e "\033[106m[⚒️]\033[0m Building LSI."
-				$(ECHO) -e "\033[105m[🏁]\033[0m $(FLAG)"
-				$(AR) -rc $(LSI_NAME) $(LSI_OBJECTS)
-				$(ECHO) -e "\033[102m[✅]\033[0m LSI builded!"
 
 build_SL: $(SL_OBJECTS)
 				$(ECHO) -ne "\033[104m[✅]\033[0m All standard functions (SL) have been compiled\n"
@@ -98,11 +86,11 @@ fclean: clean
 
 re: fclean all
 
-RUN: build_FC build_LSI build_SL
+RUN: build_FC build_SL
 				$(ECHO) -ne "\033[104m[✅]\033[0m All functions have been compiled\n"
 				$(ECHO) -e "\033[106m[⚒️]\033[0m Building program"
 				$(ECHO) -e "\033[105m[🏁]\033[0m $(FLAG)"
-				$(cc) $(FLAG) -o $(NAME) main.c $(SL_NAME) $(LSI_NAME) $(FC_NAME)
+				$(cc) $(FLAG) -o $(NAME) main.c $(SL_NAME) $(FC_NAME)
 				$(ECHO) -e "\033[102m[✅]\033[0m Program builded"
 				$(clean)
 
